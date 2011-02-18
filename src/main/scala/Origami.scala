@@ -1,8 +1,5 @@
 package origami
 
-import scalaz._
-import Scalaz._
-
 object Origami {
 
   case class Fix[F[_, _], A](out: F[A, Fix[F, A]])
